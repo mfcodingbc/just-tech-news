@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
       'user_id',
       'post_id'
     ],
-    order: [['created_at', 'DESC']]
+    order: [['created_at', 'ASC']]
   })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
